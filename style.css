@@ -46,11 +46,13 @@ div.header p.vocation {
 	flex: 1;
 	padding-left: 4%;
 	background: #ffffff;
+  min-width: 215px;
 }
 
 .textcols-item + .textcols-item {
   background: #EFEFEF;
   flex: 4;
+  min-width: none;
 }
 
 h3 {
@@ -70,7 +72,6 @@ ul {
 
 .edu, .contacts, .skills {
   margin-top: 20px;
-  
 }
 
 .courses, .projects {
@@ -85,4 +86,29 @@ ul {
 .projects li {
   width: 60%;
   margin-bottom: 20px;
+}
+
+.contacts li {
+  margin: 0;
+	padding: 10px 0 10px 30px;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+
+.contacts li:nth-child(1) {
+	background-image: url("img/Telegram-icon.png");
+}
+
+.contacts li:nth-child(2) {
+	background-image: url("img/mail-icon.png");
+}
+
+.contacts li:nth-child(3) {
+	background-image: url("img/github-icon.png");
+}
+
+.contacts li:nth-child(4) {
+	background-image: url("img/phone-icon.png");
 }
